@@ -1,0 +1,32 @@
+{
+  "name": "enm/json-api-object-resource-mapper-bundle",
+  "description": "Symfony integration for object resource mappers from enm/json-api-common",
+  "type": "library",
+  "require": {
+    "php": ">=7.2",
+    "enm/json-api-common": "^3.0",
+    "symfony/dependency-injection": "^4.0",
+    "symfony/http-kernel": "^2.7|^3.0|^4.0"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.3"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Philipp Marien",
+      "email": "marien@eosnewmedia.de"
+    }
+  ],
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "Enm\\Bundle\\JsonApi\\Mapper\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Enm\\Bundle\\JsonApi\\Mapper\\Tests\\": "tests"
+    }
+  }
+}
