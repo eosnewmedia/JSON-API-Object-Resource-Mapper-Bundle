@@ -12,7 +12,7 @@ use Symfony\Component\DependencyInjection\Extension\Extension;
 /**
  * @author Philipp Marien <marien@eosnewmedia.de>
  */
-class EnmJsonApiServerResourceMapperExtension extends Extension
+class EnmJsonApiObjectResourceMapperExtension extends Extension
 {
     /**
      * Loads a specific configuration.
