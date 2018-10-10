@@ -3,8 +3,8 @@ declare(strict_types=1);
 
 namespace Enm\Bundle\JsonApi\Mapper\Tests;
 
-use Enm\Bundle\JsonApi\Mapper\DependencyInjection\EnmJsonApiServerResourceMapperExtension;
-use Enm\Bundle\JsonApi\Mapper\EnmJsonApiMapperBundle;
+use Enm\Bundle\JsonApi\Mapper\DependencyInjection\EnmJsonApiObjectResourceMapperExtension;
+use Enm\Bundle\JsonApi\Mapper\EnmJsonApiObjectResourceMapperBundle;
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 
@@ -20,8 +20,8 @@ class EnmJsonApiServerResourceMapperBundleTest extends TestCase
     {
         $container = new ContainerBuilder();
 
-        (new EnmJsonApiMapperBundle())->build($container);
-        (new EnmJsonApiServerResourceMapperExtension())->load([], $container);
+        (new EnmJsonApiObjectResourceMapperBundle())->build($container);
+        (new EnmJsonApiObjectResourceMapperExtension())->load([], $container);
 
         try {
             $container->compile();

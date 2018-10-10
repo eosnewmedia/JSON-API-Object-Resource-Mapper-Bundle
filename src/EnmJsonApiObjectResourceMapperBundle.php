@@ -11,7 +11,7 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
 /**
  * @author Philipp Marien <marien@eosnewmedia.de>
  */
-class EnmJsonApiMapperBundle extends Bundle
+class EnmJsonApiObjectResourceMapperBundle extends Bundle
 {
     /**
      * Builds the bundle.
